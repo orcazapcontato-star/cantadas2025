@@ -9,9 +9,11 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Badge } from "@/components/ui/badge"
 import { Heart, User, LogOut, Star, Menu } from "lucide-react"
 import Link from "next/link"
 import { useAuth } from "@/lib/auth-context"
+import { useRealtimeSync } from "@/lib/realtime-sync"
 import { useState } from "react"
 
 interface NavigationProps {
@@ -20,6 +22,7 @@ interface NavigationProps {
 
 export function Navigation({ currentPage }: NavigationProps) {
   const { user, logout } = useAuth()
+  const { stats } = useRealtimeSync()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const navLinks = [
@@ -78,6 +81,11 @@ export function Navigation({ currentPage }: NavigationProps) {
                     <Link href="/favoritos" className="flex items-center gap-2 cursor-pointer">
                       <Star className="h-4 w-4" />
                       Favoritos
+                      {stats.totalFavorites > 0 && (
+                        <Badge variant="secondary" className="ml-auto">
+                          {stats.totalFavorites}
+                        </Badge>
+                      )}
                     </Link>
                   </DropdownMenuItem>
                   <DropdownMenuSeparator />
@@ -106,8 +114,16 @@ export function Navigation({ currentPage }: NavigationProps) {
           <div className="lg:hidden flex items-center gap-2">
             {user && (
               <Link href="/favoritos">
-                <Button variant="ghost" size="icon" className="h-9 w-9">
+                <Button variant="ghost" size="icon" className="h-9 w-9 relative">
                   <Star className="h-5 w-5" />
+                  {stats.totalFavorites > 0 && (
+                    <Badge
+                      variant="secondary"
+                      className="absolute -top-1 -right-1 h-5 w-5 flex items-center justify-center p-0 text-xs"
+                    >
+                      {stats.totalFavorites}
+                    </Badge>
+                  )}
                 </Button>
               </Link>
             )}
@@ -169,6 +185,11 @@ export function Navigation({ currentPage }: NavigationProps) {
                         >
                           <Star className="h-4 w-4 mr-2" />
                           Favoritos
+                          {stats.totalFavorites > 0 && (
+                            <Badge variant="secondary" className="ml-auto">
+                              {stats.totalFavorites}
+                            </Badge>
+                          )}
                         </Button>
                         <Button
                           variant="outline"

@@ -37,6 +37,7 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
   // Save favorites to localStorage whenever favorites change
   useEffect(() => {
     localStorage.setItem("cantadas-favorites", JSON.stringify(favorites))
+    window.dispatchEvent(new Event("favorites-updated"))
   }, [favorites])
 
   const addFavorite = (item: Omit<FavoriteItem, "id" | "dateAdded">) => {

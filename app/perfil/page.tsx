@@ -17,10 +17,12 @@ import { Separator } from "@/components/ui/separator"
 import { useToast } from "@/hooks/use-toast"
 import { Heart, MessageSquare, BookOpen, Calendar, Settings, User, Shield } from "lucide-react"
 import { useRouter } from "next/navigation"
+import { useRealtimeSync } from "@/lib/realtime-sync"
 
 export default function PerfilPage() {
   const { user, updateProfile, logout } = useAuth()
   const { favorites } = useFavorites()
+  const { stats: realtimeStats } = useRealtimeSync()
   const { toast } = useToast()
   const router = useRouter()
 
@@ -72,7 +74,7 @@ export default function PerfilPage() {
   const stats = [
     {
       label: "Cantadas Favoritas",
-      value: favorites.filter((f) => f.type === "cantada").length,
+      value: realtimeStats.totalCantadas,
       icon: Heart,
       color: "text-pink-600",
     },
@@ -84,7 +86,7 @@ export default function PerfilPage() {
     },
     {
       label: "Dicas Salvas",
-      value: favorites.filter((f) => f.type === "dica").length,
+      value: realtimeStats.totalDicas,
       icon: BookOpen,
       color: "text-purple-600",
     },

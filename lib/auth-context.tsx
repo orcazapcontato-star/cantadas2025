@@ -123,6 +123,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       setUser(updatedUser)
       localStorage.setItem("cristas-cantadas-user", JSON.stringify(updatedUser))
 
+      window.dispatchEvent(new Event("user-updated"))
+
       setIsLoading(false)
       return true
     }
