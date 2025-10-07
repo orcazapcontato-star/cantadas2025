@@ -16,7 +16,6 @@ interface FavoritesContextType {
   favorites: FavoriteItem[]
   addFavorite: (item: Omit<FavoriteItem, "id" | "dateAdded">) => void
   removeFavorite: (id: string) => void
-  clearAllFavorites: () => void
   isFavorite: (content: string) => boolean
   getFavoritesByType: (type: FavoriteItem["type"]) => FavoriteItem[]
 }
@@ -37,7 +36,6 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
   // Save favorites to localStorage whenever favorites change
   useEffect(() => {
     localStorage.setItem("cantadas-favorites", JSON.stringify(favorites))
-    window.dispatchEvent(new Event("favorites-updated"))
   }, [favorites])
 
   const addFavorite = (item: Omit<FavoriteItem, "id" | "dateAdded">) => {
@@ -51,10 +49,6 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
 
   const removeFavorite = (id: string) => {
     setFavorites((prev) => prev.filter((fav) => fav.id !== id))
-  }
-
-  const clearAllFavorites = () => {
-    setFavorites([])
   }
 
   const isFavorite = (content: string) => {
@@ -71,7 +65,6 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
         favorites,
         addFavorite,
         removeFavorite,
-        clearAllFavorites,
         isFavorite,
         getFavoritesByType,
       }}

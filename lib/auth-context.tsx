@@ -7,14 +7,6 @@ interface User {
   id: string
   name: string
   email: string
-  bio?: string
-  avatar?: string
-  createdAt?: string
-  preferences?: {
-    notifications: boolean
-    newsletter: boolean
-    darkMode: boolean
-  }
 }
 
 interface AuthContextType {
@@ -22,7 +14,6 @@ interface AuthContextType {
   login: (email: string, password: string, name?: string) => Promise<boolean>
   register: (name: string, email: string, password: string) => Promise<boolean>
   logout: () => void
-  updateProfile: (updates: Partial<User>) => Promise<boolean>
   isLoading: boolean
 }
 
@@ -103,41 +94,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     localStorage.removeItem("cristas-cantadas-user")
   }
 
-  const updateProfile = async (updates: Partial<User>): Promise<boolean> => {
-    if (!user) return false
-
-    setIsLoading(true)
-
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 500))
-
-    // Update user in localStorage
-    const users = JSON.parse(localStorage.getItem("cristas-cantadas-users") || "[]")
-    const userIndex = users.findIndex((u: any) => u.id === user.id)
-
-    if (userIndex !== -1) {
-      users[userIndex] = { ...users[userIndex], ...updates }
-      localStorage.setItem("cristas-cantadas-users", JSON.stringify(users))
-
-      const updatedUser = { ...user, ...updates }
-      setUser(updatedUser)
-      localStorage.setItem("cristas-cantadas-user", JSON.stringify(updatedUser))
-
-      window.dispatchEvent(new Event("user-updated"))
-
-      setIsLoading(false)
-      return true
-    }
-
-    setIsLoading(false)
-    return false
-  }
-
-  return (
-    <AuthContext.Provider value={{ user, login, register, logout, updateProfile, isLoading }}>
-      {children}
-    </AuthContext.Provider>
-  )
+  return <AuthContext.Provider value={{ user, login, register, logout, isLoading }}>{children}</AuthContext.Provider>
 }
 
 export function useAuth() {

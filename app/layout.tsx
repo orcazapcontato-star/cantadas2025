@@ -5,7 +5,6 @@ import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import { FavoritesProvider } from "@/lib/favorites-context"
 import { AuthProvider } from "@/lib/auth-context"
-import { RealtimeSyncProvider } from "@/lib/realtime-sync"
 import { Suspense } from "react"
 import "./globals.css"
 
@@ -25,9 +24,7 @@ export default function RootLayout({
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
         <Suspense fallback={<div>Loading...</div>}>
           <AuthProvider>
-            <FavoritesProvider>
-              <RealtimeSyncProvider>{children}</RealtimeSyncProvider>
-            </FavoritesProvider>
+            <FavoritesProvider>{children}</FavoritesProvider>
           </AuthProvider>
           <Analytics />
         </Suspense>
