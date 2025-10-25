@@ -349,108 +349,586 @@ const relationshipTips = [
   },
   {
     id: 31,
-    title: "Criem Rituais de Conexão",
+    title: "Fortaleçam a Intimidade Emocional",
     content:
-      "Estabeleçam rituais diários ou semanais que os conectem. Pode ser um café matinal juntos, uma caminhada noturna ou uma noite de cinema. Os rituais criam previsibilidade e segurança no relacionamento.",
-    category: "Tempo",
-    icon: Calendar,
-    verse: "Que tudo seja feito com decência e ordem. - 1 Coríntios 14:40",
-    popularity: 81,
-  },
-  {
-    id: 32,
-    title: "Pratiquem a Vulnerabilidade",
-    content:
-      "Sejam honestos sobre seus medos, inseguranças e fraquezas. A vulnerabilidade cria intimidade verdadeira. Não tenham medo de mostrar seu lado frágil. Quando vocês se permitem ser vulneráveis, criam espaço para que o outro também seja.",
+      "Compartilhem medos, sonhos e inseguranças sem medo de julgamento. A intimidade emocional cria conexão profunda e segurança no relacionamento. Conversem abertamente sobre sentimentos e aprendam a apoiar-se mutuamente.",
     category: "Intimidade",
     icon: Heart,
-    verse:
-      "Portanto, confessem os pecados uns aos outros e orem uns pelos outros, para que sejam curados. - Tiago 5:16",
-    popularity: 84,
-  },
-  {
-    id: 33,
-    title: "Respeitem os Limites Pessoais",
-    content:
-      "Cada pessoa precisa de espaço pessoal e tempo sozinha. Respeitem os limites um do outro sem se sentirem rejeitados. Limites saudáveis fortalecem o relacionamento. Comuniquem suas necessidades claramente.",
-    category: "Respeito",
-    icon: Shield,
-    verse: "Que cada um de vocês saiba controlar o seu próprio corpo de forma santa e honrosa. - 1 Tessalonicenses 4:4",
-    popularity: 77,
-  },
-  {
-    id: 34,
-    title: "Invistam em Educação Financeira Conjunta",
-    content:
-      "Aprendam juntos sobre investimentos, poupança e planejamento financeiro. Criem um plano financeiro compartilhado. A educação financeira conjunta evita conflitos e constrói segurança.",
-    category: "Finanças",
-    icon: TrendingUp,
-    verse:
-      "O prudente vê o perigo e se refugia, mas o ingênuo segue adiante e sofre as consequências. - Provérbios 22:3",
-    popularity: 74,
-  },
-  {
-    id: 35,
-    title: "Celebrem as Pequenas Vitórias",
-    content:
-      "Não esperem apenas pelos grandes marcos. Celebrem as pequenas conquistas diárias. Um elogio sincero, um abraço caloroso ou uma mensagem de encorajamento fazem diferença. As pequenas celebrações mantêm o relacionamento alegre.",
-    category: "Celebração",
-    icon: Award,
-    verse: "Regozijam-se sempre no Senhor. Novamente digo: regozijam-se! - Filipenses 4:4",
-    popularity: 83,
-  },
-  {
-    id: 36,
-    title: "Pratiquem a Compaixão Mútua",
-    content:
-      "Sejam compassivos com as dificuldades um do outro. Ofereçam apoio emocional e prático. A compaixão é o coração do amor cristão. Quando um sofre, o outro sofre também.",
-    category: "Amor Prático",
-    icon: Heart,
-    verse:
-      "Portanto, como eleitos de Deus, santos e amados, revistam-se de compaixão, bondade, humildade, mansidão e paciência. - Colossenses 3:12",
-    popularity: 85,
-  },
-  {
-    id: 37,
-    title: "Mantenham a Esperança em Tempos Difíceis",
-    content:
-      "Todo relacionamento enfrenta desafios. Mantenham a esperança e a fé em Deus durante as dificuldades. Lembrem-se de por que se amam. A esperança é o que sustenta o relacionamento através das tempestades.",
-    category: "Fé",
-    icon: Compass,
-    verse: "Que o Deus da esperança os encha de toda alegria e paz, por sua confiança nele. - Romanos 15:13",
+    verse: "Portanto, confiem uns nos outros profundamente, pois o amor cobre uma multidão de pecados. - 1 Pedro 4:8",
     popularity: 88,
   },
   {
-    id: 38,
-    title: "Criem um Ambiente de Segurança Emocional",
+    id: 32,
+    title: "Planejem Momentos de Lazer",
     content:
-      "Façam seu relacionamento um lugar seguro onde ambos possam ser autênticos. Não julguem, critiquem ou ridicularizem. A segurança emocional permite que o amor floresça plenamente.",
+      "Reserve tempo para relaxar juntos, sem preocupações externas. Atividades recreativas fortalecem o vínculo e renovam a energia emocional. Encontros divertidos mantêm o relacionamento leve e prazeroso.",
+    category: "Bem-estar",
+    icon: Smile,
+    verse: "Tudo tem o seu tempo determinado, e há tempo para todo propósito debaixo do céu. - Eclesiastes 3:1",
+    popularity: 82,
+  },
+  {
+    id: 33,
+    title: "Pratiquem a Intimidade Física com Respeito",
+    content:
+      "A intimidade física deve ser expressa com amor, respeito e consentimento. Fortalece o vínculo e a confiança, mantendo limites saudáveis conforme valores pessoais e espirituais.",
     category: "Intimidade",
-    icon: Shield,
-    verse: "Não há medo no amor; ao contrário, o amor perfeito expulsa o medo. - 1 João 4:18",
+    icon: Users,
+    verse: "Fujam da imoralidade sexual. Todos os outros pecados que alguém comete, fora do corpo os comete; mas quem se entrega à imoralidade sexual peca contra o próprio corpo. - 1 Coríntios 6:18",
+    popularity: 85,
+  },
+  {
+    id: 34,
+    title: "Façam Planejamento Financeiro Conjunto",
+    content:
+      "Discutam gastos, economias e investimentos juntos. Planejar o futuro financeiro fortalece a confiança e evita desentendimentos. Estabeleçam metas claras e revisem periodicamente.",
+    category: "Finanças",
+    icon: TrendingUp,
+    verse: "O bom senso faz crescer o conhecimento, mas o coração insensato se perde. - Provérbios 18:15",
+    popularity: 80,
+  },
+  {
+    id: 35,
+    title: "Respeitem o Espaço Individual",
+    content:
+      "Cada pessoa precisa de momentos para si mesma. Respeitar o espaço do outro fortalece a confiança e mantém a individualidade saudável. Apoiem hobbies, amizades e interesses pessoais.",
+    category: "Fundamentos",
+    icon: UserCheck,
+    verse: "Não se amoldem ao padrão deste mundo, mas transformem-se pela renovação da mente. - Romanos 12:2",
     popularity: 87,
   },
   {
-    id: 39,
-    title: "Pratiquem a Generosidade de Tempo",
+    id: 36,
+    title: "Busquem Crescimento Intelectual",
     content:
-      "O tempo é o recurso mais valioso. Dediquem tempo de qualidade um ao outro sem distrações. Coloquem o celular de lado e foquem completamente. A generosidade de tempo é a maior expressão de amor.",
-    category: "Tempo",
-    icon: Clock,
-    verse:
-      "Portanto, como eleitos de Deus, santos e amados, revistam-se de compaixão, bondade, humildade, mansidão e paciência. - Colossenses 3:12",
-    popularity: 89,
+      "Leiam, estudem e aprendam juntos. A mente estimulada gera conversas profundas e mantém o relacionamento dinâmico. Compartilhar conhecimento fortalece admiração e respeito mútuos.",
+    category: "Crescimento",
+    icon: BookOpen,
+    verse: "O sábio de coração aceita os mandamentos, mas o insensato e tagarela será arruinado. - Provérbios 10:8",
+    popularity: 78,
+  },
+  {
+    id: 37,
+    title: "Tenham Rotinas Espirituais em Comum",
+    content:
+      "Participem juntos de leituras devocionais, estudos bíblicos ou meditação. A espiritualidade compartilhada cria unidade e propósito divino no relacionamento.",
+    category: "Espiritualidade",
+    icon: Compass,
+    verse: "Onde estiverem dois ou três reunidos em meu nome, ali estou no meio deles. - Mateus 18:20",
+    popularity: 90,
+  },
+  {
+    id: 38,
+    title: "Sejam Criativos no Romance",
+    content:
+      "Surpreendam-se com pequenos gestos e novidades. Cartas, surpresas ou encontros inesperados mantêm a chama acesa e mostram cuidado e atenção.",
+    category: "Romance",
+    icon: Sparkles,
+    verse: "O amor seja sem hipocrisia. Detestem o mal, apeguem-se ao bem. - Romanos 12:9",
+    popularity: 88,
+  },
+  {
+    id: 39,
+    title: "Desenvolvam Resiliência em Conflitos",
+    content:
+      "Aprendam a enfrentar desentendimentos com calma e maturidade. A resiliência emocional evita que pequenas discussões se tornem grandes problemas. Busquem soluções, não culpados.",
+    category: "Conflitos",
+    icon: Shield,
+    verse: "Sejam fortes e corajosos. Não temam, pois o Senhor, seu Deus, estará com vocês. - Josué 1:9",
+    popularity: 84,
   },
   {
     id: 40,
-    title: "Mantenham a Visão Compartilhada",
+    title: "Dedique Tempo para Autocuidado",
     content:
-      "Revisitem regularmente seus objetivos e sonhos compartilhados. Ajustem conforme necessário, mas mantenham a visão clara. Uma visão compartilhada mantém o relacionamento focado e propositivo.",
+      "O cuidado pessoal é essencial para manter saúde física, mental e emocional. Um parceiro saudável contribui para um relacionamento saudável. Incentivem hábitos de bem-estar.",
+    category: "Bem-estar",
+    icon: Heart,
+    verse: "Amarás o teu próximo como a ti mesmo. - Mateus 22:39",
+    popularity: 83,
+  },
+  {
+    id: 41,
+    title: "Comemorem Datas Especiais",
+    content:
+      "Não deixem passar aniversários, conquistas e datas importantes. Celebrações reforçam carinho, atenção e mostram valorização do relacionamento.",
+    category: "Tempo",
+    icon: Calendar,
+    verse: "Tudo o que fizerem, façam de todo o coração, como para o Senhor, e não para os homens. - Colossenses 3:23",
+    popularity: 81,
+  },
+  {
+    id: 42,
+    title: "Pratiquem a Honestidade Radical",
+    content:
+      "Sejam sempre sinceros, mesmo quando é difícil. A transparência fortalece confiança e evita mal-entendidos. A honestidade é a base de qualquer relacionamento duradouro.",
+    category: "Fundamentos",
+    icon: Shield,
+    verse: "A boca fala do que está cheio o coração. - Lucas 6:45",
+    popularity: 89,
+  },
+  {
+    id: 43,
+    title: "Estabeleçam Tradições de Casal",
+    content:
+      "Criem hábitos e rituais que só vocês compartilham. Tradições fortalecem identidade de casal e criam memórias únicas e significativas.",
+    category: "Memórias",
+    icon: Calendar,
+    verse: "Este é o dia que o Senhor fez; regozijemo-nos e alegremo-nos nele. - Salmos 118:24",
+    popularity: 82,
+  },
+  {
+    id: 44,
+    title: "Cultivem o Hábito da Gratidão Mútua",
+    content:
+      "Expressem diariamente apreciação pelo parceiro. Pequenos reconhecimentos fortalecem o vínculo e aumentam a satisfação no relacionamento.",
+    category: "Gratidão",
+    icon: Star,
+    verse: "Em tudo dai graças, porque esta é a vontade de Deus em Cristo Jesus para convosco. - 1 Tessalonicenses 5:18",
+    popularity: 85,
+  },
+  {
+    id: 45,
+    title: "Invistam em Comunicação Não Verbal",
+    content:
+      "Gestos, toques e olhares dizem muito. Aprender a se comunicar sem palavras aumenta intimidade e compreensão mútua.",
+    category: "Comunicação",
+    icon: MessageCircle,
+    verse: "O coração do homem planeja o seu caminho, mas o Senhor dirige os seus passos. - Provérbios 16:9",
+    popularity: 83,
+  },
+  {
+    id: 46,
+    title: "Revisem Objetivos Periodicamente",
+    content:
+      "Conversem sobre metas de vida, sonhos e planos regularmente. Ajustes periódicos mantêm o relacionamento alinhado e fortalecem a parceria.",
     category: "Planejamento",
     icon: Target,
-    verse: "Onde não há visão, o povo perece; mas bem-aventurado é aquele que guarda a lei. - Provérbios 29:18",
+    verse: "Os planos do diligente tendem à abundância, mas o precipitado acaba na pobreza. - Provérbios 21:5",
     popularity: 80,
   },
+  {
+    id: 47,
+    title: "Pratiquem a Empatia Diária",
+    content:
+      "Esforcem-se para compreender o ponto de vista do parceiro em todas as situações. A empatia fortalece a conexão e evita mal-entendidos.",
+    category: "Fundamentos",
+    icon: Users,
+    verse: "Alegrem-se com os que se alegram; chorem com os que choram. - Romanos 12:15",
+    popularity: 86,
+  },
+  {
+    id: 48,
+    title: "Fortaleçam a Fé Juntos",
+    content:
+      "Participem de atividades espirituais em conjunto, apoiando o crescimento espiritual mútuo. A fé compartilhada cria unidade e propósito no relacionamento.",
+    category: "Espiritualidade",
+    icon: Compass,
+    verse: "E consideremo-nos uns aos outros para nos estimularmos ao amor e às boas obras. - Hebreus 10:24",
+    popularity: 88,
+  },
+  {
+    id: 49,
+    title: "Pratiquem a Escuta Ativa",
+    content:
+      "Dediquem atenção total ao parceiro ao ouvir. Evitar interrupções e validar sentimentos aumenta a compreensão e intimidade emocional.",
+    category: "Comunicação",
+    icon: MessageCircle,
+    verse: "A resposta branda desvia o furor, mas a palavra dura suscita a ira. - Provérbios 15:1",
+    popularity: 87,
+  },
+  {
+    id: 50,
+    title: "Mantenham a Pureza nos Relacionamentos",
+    content:
+      "Respeitem limites físicos e emocionais de acordo com valores pessoais e espirituais. A pureza fortalece confiança e respeito mútuo.",
+    category: "Pureza",
+    icon: Shield,
+    verse: "Fujam da imoralidade sexual. - 1 Coríntios 6:18",
+    popularity: 85,
+  },
+  {
+    id: 51,
+    title: "Desafiem-se a Crescer Juntos",
+    content:
+      "Busquem aprender coisas novas e enfrentar desafios como equipe. Crescer juntos fortalece a parceria e mantém o relacionamento dinâmico.",
+    category: "Crescimento",
+    icon: TrendingUp,
+    verse: "Ensina a criança no caminho em que deve andar, e até quando envelhecer não se desviará dele. - Provérbios 22:6",
+    popularity: 82,
+  },
+  {
+    id: 52,
+    title: "Cultivem a Paixão no Dia a Dia",
+    content:
+      "Mantenham gestos de carinho, surpresas e atenção ao parceiro. Pequenos atos românticos renovam a chama do amor diariamente.",
+    category: "Romance",
+    icon: Heart,
+    verse: "Acima de tudo, revistam-se do amor, que é o elo perfeito. - Colossenses 3:14",
+    popularity: 89,
+  },
+  {
+    id: 53,
+    title: "Gerenciem Conflitos com Calma",
+    content:
+      "Em situações de desentendimento, busquem soluções pacíficas e respeitosas. Evitar brigas impulsivas preserva o relacionamento e fortalece a confiança.",
+    category: "Conflitos",
+    icon: Shield,
+    verse: "Sejam todos prontos para ouvir, tardios para falar, tardios para irar-se. - Tiago 1:19",
+    popularity: 86,
+  },
+  {
+    id: 54,
+    title: "Pratiquem a Honestidade Radical",
+    content:
+      "Sejam sempre transparentes sobre sentimentos e intenções. A sinceridade evita conflitos e constrói confiança verdadeira.",
+    category: "Fundamentos",
+    icon: Users,
+    verse: "Portanto, deixemos a mentira e falemos a verdade cada um com o seu próximo. - Efésios 4:25",
+    popularity: 80,
+  },
+  {
+    id: 55,
+    title: "Cultivem a Paciência",
+    content:
+      "Aprender a esperar e compreender os momentos do outro fortalece a relação e evita decisões impulsivas.",
+    category: "Fundamentos",
+    icon: Users,
+    verse: "O amor é paciente, o amor é bondoso. - 1 Coríntios 13:4",
+    popularity: 82,
+  },
+  {
+    id: 56,
+    title: "Valorizem Pequenos Gestos",
+    content:
+      "Gestos simples de atenção e carinho demonstram cuidado constante e mantêm o vínculo emocional saudável.",
+    category: "Fundamentos",
+    icon: Users,
+    verse: "Em tudo o que fizerem, façam de todo o coração, como para o Senhor. - Colossenses 3:23",
+    popularity: 78,
+  },
+  {
+    id: 57,
+    title: "Mantenham Compromissos",
+    content:
+      "Cumprir promessas, mesmo nas pequenas coisas, demonstra respeito e integridade no relacionamento.",
+    category: "Fundamentos",
+    icon: Users,
+    verse: "O que promete ao seu próximo não deixe de cumprir. - Eclesiastes 5:4",
+    popularity: 85,
+  },
+  {
+    id: 58,
+    title: "Cultivem a Gratidão Mútua",
+    content:
+      "Reconhecer e agradecer as atitudes do parceiro fortalece a parceria e incentiva comportamentos positivos.",
+    category: "Fundamentos",
+    icon: Users,
+    verse: "Dai graças em tudo. - 1 Tessalonicenses 5:18",
+    popularity: 79,
+  },
+  {
+    id: 59,
+    title: "Sejam Coerentes em Palavras e Ações",
+    content:
+      "A congruência entre o que se diz e o que se faz gera segurança emocional e respeito mútuo.",
+    category: "Fundamentos",
+    icon: Users,
+    verse: "Portanto, tudo o que vocês querem que os outros façam a vocês, façam também vocês a eles. - Mateus 7:12",
+    popularity: 81,
+  },
+  {
+    id: 60,
+    title: "Priorize a Conexão Diária",
+    content:
+      "Reserve momentos para diálogo, carinho e atenção. Pequenas ações diárias fortalecem o vínculo e previnem distanciamentos.",
+    category: "Fundamentos",
+    icon: Users,
+    verse: "E consideremo-nos uns aos outros, para nos estimularmos ao amor e às boas obras. - Hebreus 10:24",
+    popularity: 84,
+  },
+  {
+    id: 61,
+    title: "Construam Confiança Mútua",
+    content:
+      "A confiança é a base de qualquer relacionamento saudável. Sejam honestos, cumpram promessas e respeitem limites.",
+    category: "Fundamentos",
+    icon: Users,
+    verse: "O homem que é fiel no pouco, também é fiel no muito.” – Lucas 16:10",
+    popularity: 92,
+  },
+  {
+    id: 62,
+    title: "Orem Juntos",
+    content:
+      "Reservem momentos diários ou semanais para orar juntos, fortalecendo a conexão espiritual e buscando orientação divina em decisões e desafios do relacionamento.",
+    category: "Espiritualidade",
+    icon: Compass, // ícone de mãos em oração
+    verse: "Porque onde estiverem dois ou três reunidos em meu nome, ali estou no meio deles. - Mateus 18:20",
+    popularity: 92,
+  },
+  {
+    id: 63,
+    title: "Estudem Textos Sagrados em Conjunto",
+    content:
+      "Leiam e discutam passagens espirituais juntos. Isso incentiva reflexão, aprendizado e crescimento mútuo.",
+    category: "Espiritualidade",
+    icon: BookOpen,
+    verse: "Lâmpada para os meus pés é tua palavra, e luz para o meu caminho. - Salmos 119:105",
+    popularity: 80,
+  },
+  {
+    id: 64,
+    title: "Pratiquem Atos de Serviço",
+    content:
+      "Realizem ações de bondade e serviço juntos, fortalecendo a fé através da prática e do amor ao próximo.",
+    category: "Espiritualidade",
+    icon: Compass,
+    verse: "Cada um administre aos outros o dom que recebeu, como bons despenseiros da multiforme graça de Deus. - 1 Pedro 4:10",
+    popularity: 82,
+  },
+  {
+    id: 65,
+    title: "Cultivem Gratidão Juntos",
+    content:
+      "Compartilhem diariamente motivos de gratidão. Reconhecer bênçãos fortalece a fé e a união espiritual.",
+    category: "Espiritualidade",
+    icon: Star,
+    verse: "Em tudo dai graças, porque esta é a vontade de Deus em Cristo Jesus para convosco. - 1 Tessalonicenses 5:18",
+    popularity: 79,
+  },
+  {
+    id: 66,
+    title: "Participem de Comunidades Espirituais",
+    content:
+      "Envolvam-se em grupos ou comunidades de fé. O apoio coletivo fortalece a espiritualidade e a motivação no relacionamento.",
+    category: "Espiritualidade",
+    icon: Users,
+    verse: "Não abandonemos a nossa congregação, como é costume de alguns, antes admoestemo-nos uns aos outros. - Hebreus 10:25",
+    popularity: 77,
+  },
+  {
+    id: 67,
+    title: "Meditem Juntos",
+    content:
+      "Reserve um tempo para meditar sobre ensinamentos espirituais ou momentos de introspecção, compartilhando insights e crescimento.",
+    category: "Espiritualidade",
+    icon: Users,
+    verse: "Aquietai-vos e sabei que eu sou Deus. - Salmos 46:10",
+    popularity: 75,
+  },
+  {
+    id: 68,
+    title: "Celebrem Conquistas Espirituais",
+    content:
+      "Reconheçam juntos os progressos na fé e na espiritualidade, reforçando a motivação e a alegria do crescimento mútuo.",
+    category: "Espiritualidade",
+    icon: Users,
+    verse: "Regozijai-vos sempre. - 1 Tessalonicenses 5:16",
+    popularity: 78,
+  },
+  {
+    id: 69,
+    title: "Pratiquem Silêncio e Reflexão",
+    content:
+      "Reserve momentos de silêncio juntos para refletir sobre a fé e os ensinamentos espirituais, fortalecendo a conexão interior.",
+    category: "Espiritualidade",
+    icon: Users,
+    verse: "Mas tu, quando orares, entra no teu quarto, e fechando a porta, ora a teu Pai que está em secreto. - Mateus 6:6",
+    popularity: 76,
+  },
+  {
+    id: 70,
+    title: "Estabeleçam Objetivos Espirituais",
+    content:
+      "Definam juntos metas de crescimento espiritual, como estudo da palavra, orações ou serviços comunitários.",
+    category: "Espiritualidade",
+    icon: Target,
+    verse: "Esforçai-vos por entrar pela porta estreita; porque muitos, digo-vos, tentarão entrar, e não poderão. - Lucas 13:24",
+    popularity: 72,
+  } ,
+  {
+    id: 71,
+    title: "Escute com Atenção",
+    content:
+      "Dedique-se a ouvir de verdade. Preste atenção não apenas às palavras, mas também aos sentimentos por trás delas. Evite interromper e faça perguntas para entender melhor.",
+    category: "Comunicação",
+    icon: MessageCircle,
+    verse: "Quem responde antes de ouvir comete insensatez. - Provérbios 18:13",
+    popularity: 85,
+  },
+  {
+    id: 72,
+    title: "Evite Julgamentos Precipitados",
+    content:
+      "Antes de responder, reflita sobre o que ouviu. Evite tirar conclusões precipitadas ou julgar sem entender o contexto. Isso promove compreensão e evita conflitos desnecessários.",
+    category: "Comunicação",
+    icon: MessageCircle,
+    verse: "Não julguem, para que vocês não sejam julgados. - Mateus 7:1",
+    popularity: 80,
+  },
+  {
+    id: 73,
+    title: "Use Palavras de Incentivo",
+    content:
+      "Seja generoso com elogios e encorajamentos. Palavras positivas fortalecem relacionamentos e elevam o espírito de quem ouve. Evite críticas destrutivas e comentários negativos.",
+    category: "Comunicação",
+    icon: MessageCircle,
+    verse: "A morte e a vida estão no poder da língua; os que gostam de usá-la comerão do seu fruto. - Provérbios 18:21",
+    popularity: 88,
+  },
+  {
+    id: 74,
+    title: "Comunique-se com Clareza",
+    content:
+      "Expresse suas ideias e sentimentos de forma clara e objetiva. Evite ambiguidades ou indiretas que possam gerar mal-entendidos. Clareza é sinal de respeito pelo outro.",
+    category: "Comunicação",
+    icon: MessageCircle,
+    verse: "Portanto, cada um de vocês fale a verdade com o seu próximo. - Efésios 4:25",
+    popularity: 83,
+  },
+  {
+    id: 75,
+    title: "Seja Paciente ao Falar",
+    content:
+      "Não se precipite em respostas ou reações. Respire fundo, organize seus pensamentos e fale com calma. A paciência evita desentendimentos e demonstra maturidade emocional.",
+    category: "Comunicação",
+    icon: MessageCircle,
+    verse: "A resposta branda desvia o furor, mas a palavra dura suscita a ira. - Provérbios 15:1",
+    popularity: 87,
+  },
+  {
+    id: 76,
+    title: "Pratique a Empatia",
+    content:
+      "Coloque-se no lugar do outro antes de falar. Tente compreender seus sentimentos e perspectivas. A empatia cria conexões mais profundas e comunicação mais harmoniosa.",
+    category: "Comunicação",
+    icon: MessageCircle,
+    verse: "Regozijem-se com os que se alegram; chorem com os que choram. - Romanos 12:15",
+    popularity: 86,
+  },
+  {
+    id: 77,
+    title: "Evite Falar com Raiva",
+    content:
+      "Quando estiver irritado, espere antes de falar. Palavras ditas com raiva podem ferir e criar feridas difíceis de curar. Espere o momento certo para se expressar com amor.",
+    category: "Comunicação",
+    icon: MessageCircle,
+    verse: "Sejam todos prontos para ouvir, tardios para falar, tardios para se irar. - Tiago 1:19",
+    popularity: 89,
+  },
+  {
+    id: 78,
+    title: "Controle Seus Pensamentos",
+    content:
+      "A pureza começa na mente. Evite pensamentos impuros e distrações que possam levar a desejos prejudiciais. Pratique meditação e oração para manter seus pensamentos alinhados com seus valores.",
+    category: "Pureza",
+    icon: Heart,
+    verse:
+      "Pois, assim como imagina no seu coração, assim é ele. - Provérbios 23:7",
+    popularity: 88,
+  },
+  {
+    id: 79,
+    title: "Escolha Bem Suas Companhias",
+    content:
+      "As pessoas ao seu redor influenciam suas escolhas. Cerque-se de amigos que respeitem seus valores e incentivem o crescimento espiritual e emocional. Evite amizades que pressionem para atitudes contrárias à sua fé e princípios.",
+    category: "Pureza",
+    icon: Heart,
+    verse:
+      "Não se deixem enganar: 'As más companhias corrompem os bons costumes.' - 1 Coríntios 15:33",
+    popularity: 85,
+  },
+  {
+    id: 80,
+    title: "Seja Transparente e Honesto",
+    content:
+      "Em relacionamentos, comunique seus limites de forma clara e respeitosa. Honestidade evita mal-entendidos e mantém a pureza emocional e espiritual. Transparência fortalece confiança e intimidade verdadeira.",
+    category: "Pureza",
+    icon: Heart,
+    verse:
+      "Portanto, cada um de vocês deve abandonar a mentira e falar a verdade ao seu próximo, pois somos membros uns dos outros. - Efésios 4:25",
+    popularity: 87,
+  },
+  {
+    id: 81,
+    title: "Valorize o Respeito Mútuo",
+    content:
+      "Respeite a si mesmo e ao outro, estabelecendo limites saudáveis em todos os relacionamentos. A pureza não é apenas sobre evitar pecado, mas sobre construir respeito, dignidade e amor verdadeiro.",
+    category: "Pureza",
+    icon: Heart,
+    verse:
+      "Amem uns aos outros com amor fraternal e honrem uns aos outros acima de vocês mesmos. - Romanos 12:10",
+    popularity: 90,
+  },
+  {
+    id: 82,
+    title: "Fortaleça Sua Vida Espiritual",
+    content:
+      "A pureza é sustentada por uma vida de oração, leitura da Palavra e comunhão com Deus. Quanto mais você se aproxima de Deus, mais naturalmente você mantém seu coração, mente e corpo protegidos.",
+    category: "Pureza",
+    icon: Heart,
+    verse:
+      "Fujam da imoralidade sexual. Cada um de vocês saiba controlar o próprio corpo de maneira santa e honrosa. - 1 Tessalonicenses 4:3-4",
+    popularity: 93,
+  },
+  {
+    id: 83,
+    title: "Pratique o Autocontrole",
+    content:
+      "A disciplina pessoal é essencial para manter a pureza. Aprenda a dizer 'não' à tentação e a direcionar suas ações para o que é correto e saudável.",
+    category: "Pureza",
+    icon: Shield,
+    verse:
+      "Todo aquele que luta, de tudo se abstém; eles o fazem para alcançar uma coroa que perece, mas nós, para uma coroa que dura para sempre. - 1 Coríntios 9:25",
+    popularity: 91,
+  },
+  {
+    id: 84,
+    title: "Seja Transparente com seu Parceiro",
+    content:
+      "Em relacionamentos, a honestidade e abertura fortalecem a pureza mútua. Compartilhe seus desafios, medos e limites de maneira respeitosa e amorosa.",
+    category: "Pureza",
+    icon: Shield,
+    verse:
+      "Portanto, deixando a mentira, fale cada um a verdade com o seu próximo. - Efésios 4:25",
+    popularity: 84,
+  },
+  {
+    id: 85,
+    title: "Busque Apoio Quando Necessário",
+    content:
+      "Não enfrente tentações sozinho. Converse com amigos confiáveis, mentores ou líderes espirituais para receber orientação e apoio na manutenção da pureza.",
+    category: "Pureza",
+    icon: Shield,
+    verse:
+      "O ferro com ferro se afia, e assim o homem afia o rosto do seu amigo. - Provérbios 27:17",
+    popularity: 88,
+  },
+  {
+    id: 86,
+    title: "Valorize a Castidade",
+    content:
+      "A castidade é uma expressão de respeito próprio e amor a Deus. Valorize este princípio como algo que protege sua dignidade, seus relacionamentos e sua fé.",
+    category: "Pureza",
+    icon: Shield,
+    verse:
+      "Fujam da imoralidade sexual. Cada um saiba possuir o seu corpo em santidade e honra. - 1 Tessalonicenses 4:3-4",
+    popularity: 92,
+  },
+  {
+    id: 87,
+    title: "Evite Conteúdos Impróprios",
+    content:
+      "Proteja seus olhos e mente do que é prejudicial à pureza. Redes sociais, filmes e músicas podem influenciar pensamentos e comportamentos, então escolha conteúdos edificantes.",
+    category: "Pureza",
+    icon: Shield,
+    verse:
+      "Olho nenhum viu, ouvido nenhum ouviu, mente nenhuma imaginou o que Deus preparou para aqueles que o amam. - 1 Coríntios 2:9",
+    popularity: 86,
+  },
+  
+  
 ]
 
 const categories = [
