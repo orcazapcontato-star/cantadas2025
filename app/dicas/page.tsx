@@ -927,7 +927,599 @@ const relationshipTips = [
       "Olho nenhum viu, ouvido nenhum ouviu, mente nenhuma imaginou o que Deus preparou para aqueles que o amam. - 1 Coríntios 2:9",
     popularity: 86,
   },
+  {
+    id: 87,
+    title: "Cresçam com Propósitos Alinhados",
+    content:
+      "Tenham metas de vida que se complementem. Conversem sobre sonhos, planos e visões para o futuro. Quando o casal tem propósito em comum, o relacionamento ganha direção e sentido. Trabalhem juntos para alcançar algo maior do que vocês mesmos.",
+    category: "Crescimento",
+    icon: TrendingUp,
+    verse: "Andarão dois juntos, se não estiverem de acordo? - Amós 3:3",
+    popularity: 92,
+  },
+  {
+    id: 89,
+    title: "Busquem Crescimento Espiritual Juntos",
+    content:
+      "Incentivem o crescimento pessoal e espiritual um do outro. Leiam a Bíblia juntos, participem de estudos bíblicos e apoiem os sonhos e objetivos mútuos. Frequentem a igreja regularmente e sirvam juntos no ministério. O crescimento espiritual conjunto fortalece o vínculo e prepara vocês para um futuro abençoado.",
+    category: "Crescimento",
+    icon: TrendingUp,
+    verse: "Como o ferro afia o ferro, assim um homem afia o outro. - Provérbios 27:17",
+    popularity: 88,
+  },
+  {
+    id: 90,
+    title: "Aprendam com os Desafios",
+    content:
+      "Os momentos difíceis são oportunidades de amadurecimento. Em vez de culpar um ao outro, reflitam juntos sobre o que podem aprender e como podem evoluir. Cada obstáculo superado em união torna o amor mais maduro e resistente.",
+    category: "Crescimento",
+    icon: TrendingUp,
+    verse: "Sabemos que as tribulações produzem perseverança; a perseverança, experiência; e a experiência, esperança. - Romanos 5:3-4",
+    popularity: 86,
+  },
+  {
+    id: 91,
+    title: "Invistam em Conhecimento",
+    content:
+      "Leiam livros, façam cursos e busquem sabedoria para melhorar como pessoas e como casal. O conhecimento abre a mente, fortalece a fé e prepara vocês para decisões mais sábias. Aprender juntos é uma forma poderosa de crescer em unidade.",
+    category: "Crescimento",
+    icon: TrendingUp,
+    verse: "O coração do prudente adquire conhecimento; e o ouvido dos sábios busca o saber. - Provérbios 18:15",
+    popularity: 84,
+  },
+  {
+    id: 92,
+    title: "Desenvolvam a Paciência e a Empatia",
+    content:
+      "O crescimento vem quando aprendemos a compreender o outro, mesmo nas diferenças. Sejam pacientes, escutem com atenção e busquem enxergar as situações pelos olhos do parceiro. A empatia é uma das maiores expressões de amor.",
+    category: "Crescimento",
+    icon: TrendingUp,
+    verse: "Revesti-vos de compaixão, bondade, humildade, mansidão e paciência. - Colossenses 3:12",
+    popularity: 91,
+  },
+  {
+    id: 93,
+    title: "Celebrem Cada Conquista",
+    content:
+      "Reconheçam o progresso, por menor que seja. Celebrar as vitórias individuais e do casal motiva a continuar crescendo. A gratidão fortalece o relacionamento e mantém a alegria viva em meio às responsabilidades diárias.",
+    category: "Crescimento",
+    icon: TrendingUp,
+    verse: "Em tudo dai graças, porque esta é a vontade de Deus em Cristo Jesus. - 1 Tessalonicenses 5:18",
+    popularity: 89,
+  },
+  {
+    id: 94,
+    title: "Sejam Humildes para Reconhecer Erros",
+    content:
+      "O crescimento verdadeiro exige humildade. Admitir falhas, pedir perdão e buscar mudança mostra maturidade e amor. Um relacionamento saudável não é aquele sem erros, mas aquele onde ambos aprendem com eles.",
+    category: "Crescimento",
+    icon: TrendingUp,
+    verse: "Deus resiste aos soberbos, mas dá graça aos humildes. - Tiago 4:6",
+    popularity: 87,
+  },
+  {
+    id: 95,
+    title: "Cresçam Servindo um ao Outro",
+    content:
+      "O amor cresce quando há serviço mútuo. Ajude, apoie e esteja presente nas necessidades do parceiro. Quando colocamos o outro em primeiro lugar, nos tornamos mais parecidos com Cristo e o relacionamento floresce.",
+    category: "Crescimento",
+    icon: TrendingUp,
+    verse: "Maior é aquele que serve. - Lucas 22:26",
+    popularity: 90,
+  },
+  {
+    id: 96,
+    title: "Nunca Parem de Evoluir Juntos",
+    content:
+      "O relacionamento é uma jornada contínua. Continuem aprendendo, sonhando e crescendo lado a lado. Renovem o amor diariamente e mantenham o compromisso de serem melhores a cada dia, com Deus no centro.",
+    category: "Crescimento",
+    icon: TrendingUp,
+    verse: "Mas crescei na graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo. - 2 Pedro 3:18",
+    popularity: 95,
+  },
+  {
+    id: 97,
+    title: "Valorize os Detalhes",
+    content:
+      "No romance, os pequenos gestos são os mais poderosos. Um bilhete, uma mensagem inesperada ou um olhar carinhoso podem reacender sentimentos profundos. Mostre que você se importa, mesmo nas pequenas coisas.",
+    category: "Romance",
+    icon: Sparkles,
+    verse:
+      "O amor seja sem hipocrisia. Aborrecei o mal e apegai-vos ao bem. - Romanos 12:9",
+    popularity: 89,
+  },
+  {
+    id: 98,
+    title: "Recrie o Primeiro Encontro",
+    content:
+      "Reviver o primeiro encontro traz lembranças e emoções do início da relação. Planeje uma noite especial relembrando como tudo começou, e veja como isso fortalece a conexão entre vocês.",
+    category: "Romance",
+    icon: Sparkles,
+    verse:
+      "Lembra-te, pois, de onde caíste, e arrepende-te. - Apocalipse 2:5",
+    popularity: 91,
+  },
+  {
+    id: 99,
+    title: "Elogie Sempre",
+    content:
+      "Os elogios sinceros fortalecem a autoestima e o vínculo entre o casal. Reconheça o esforço, a beleza e as qualidades da pessoa amada. Palavras gentis transformam o clima da relação.",
+    category: "Romance",
+    icon: Sparkles,
+    verse:
+      "As palavras agradáveis são como favo de mel: doces para a alma e medicina para o corpo. - Provérbios 16:24",
+    popularity: 95,
+  },
+  {
+    id: 100,
+    title: "Crie Momentos a Dois",
+    content:
+      "Reserve tempo para estarem juntos, longe da rotina e das distrações. Pode ser um jantar, uma caminhada ou simplesmente assistir algo juntos. O importante é o tempo de qualidade.",
+    category: "Romance",
+    icon: Sparkles,
+    verse:
+      "Melhor é serem dois do que um, porque têm melhor paga do seu trabalho. - Eclesiastes 4:9",
+    popularity: 92,
+  },
+  {
+    id: 101,
+    title: "Demonstre Afeto em Público",
+    content:
+      "Pequenos gestos de carinho em público mostram orgulho e amor. Segurar a mão, um abraço ou um elogio espontâneo demonstram respeito e segurança no relacionamento.",
+    category: "Romance",
+    icon: Sparkles,
+    verse:
+      "O amor não busca os seus interesses, não se irrita, não suspeita mal. - 1 Coríntios 13:5",
+    popularity: 88,
+  },
+  {
+    id: 102,
+    title: "Seja Criativo no Amor",
+    content:
+      "Evite a rotina no relacionamento. Escreva cartas, planeje surpresas, use palavras novas e atitudes diferentes. A criatividade mantém o amor fresco e vivo.",
+    category: "Romance",
+    icon: Sparkles,
+    verse:
+      "Tudo o que fizerem, façam de todo o coração, como para o Senhor. - Colossenses 3:23",
+    popularity: 94,
+  },
+  {
+    id: 103,
+    title: "Ouça com o Coração",
+    content:
+      "Romance também é escuta. Esteja presente nas conversas, mostre empatia e interesse genuíno. Amar é compreender e estar disposto a ouvir sem julgar.",
+    category: "Romance",
+    icon: Sparkles,
+    verse:
+      "Todo homem seja pronto para ouvir, tardio para falar, tardio para se irar. - Tiago 1:19",
+    popularity: 90,
+  },
+  {
+    id: 104,
+    title: "Reforce o Compromisso",
+    content:
+      "Renove as promessas e reafirme o amor com frequência. Dizer 'eu te amo' nunca perde o poder. Relembrar o motivo pelo qual se escolheram fortalece o vínculo diariamente.",
+    category: "Romance",
+    icon: Sparkles,
+    verse:
+      "O amor jamais acaba. - 1 Coríntios 13:8",
+    popularity: 96,
+  },
+  {
+    id: 105,
+    title: "Cuidem da Aparência um do Outro",
+    content:
+      "Manter-se atraente e cuidar da aparência é uma forma de amor e respeito. Mostre que você ainda deseja conquistar seu parceiro todos os dias.",
+    category: "Romance",
+    icon: Sparkles,
+    verse:
+      "Regozije-se o teu coração na mulher da tua mocidade. - Provérbios 5:18",
+    popularity: 87,
+  },
+  {
+    id: 106,
+    title: "Transforme o Cotidiano em Romance",
+    content:
+      "Não espere datas especiais para demonstrar amor. Transforme momentos simples — como cozinhar juntos ou caminhar — em lembranças românticas e significativas.",
+    category: "Romance",
+    icon: Sparkles,
+    verse:
+      "Façam tudo com amor. - 1 Coríntios 16:14",
+    popularity: 93,
+  },
+  {
+    id: 107,
+    title: "Ouçam Antes de Reagir",
+    content:
+      "Em um conflito, o instinto é se defender ou atacar. Mas ouvir com atenção e empatia pode mudar tudo. Às vezes, o outro só quer ser compreendido. Escute sem interromper e busque entender o que está por trás das palavras.",
+    category: "Conflitos",
+    icon: Shield,
+    verse: "Todo homem deve ser pronto para ouvir, tardio para falar e tardio para irar-se. - Tiago 1:19",
+    popularity: 91,
+  },
   
+  {
+    id: 108,
+    title: "Não Procurem Vencer, Procurem Entender",
+    content:
+      "O relacionamento não é uma competição. Quando um vence e o outro perde, ambos saem feridos. Em vez de provar quem está certo, procurem compreender os sentimentos e necessidades um do outro.",
+    category: "Conflitos",
+    icon: Shield,
+    verse: "Nada façam por ambição egoísta ou vaidade, mas humildemente considerem os outros superiores a si mesmos. - Filipenses 2:3",
+    popularity: 87,
+  },
+  
+  {
+    id: 109,
+    title: "Dêem um Tempo se For Preciso",
+    content:
+      "Às vezes, insistir em conversar no calor do momento piora tudo. Se perceberem que a discussão está saindo do controle, façam uma pausa. Um tempo para respirar e refletir ajuda a evitar palavras que machucam.",
+    category: "Conflitos",
+    icon: Shield,
+    verse: "Há tempo de ficar calado e tempo de falar. - Eclesiastes 3:7",
+    popularity: 85,
+  },
+  
+  {
+    id: 110,
+    title: "Evitem o Orgulho",
+    content:
+      "O orgulho impede o perdão e alimenta ressentimentos. Admitir erros e pedir desculpas não é sinal de fraqueza, mas de amor e coragem. Um coração humilde restaura o que o orgulho destrói.",
+    category: "Conflitos",
+    icon: Shield,
+    verse: "Antes da destruição vem o orgulho, e antes da queda, o espírito altivo. - Provérbios 16:18",
+    popularity: 90,
+  },
+  
+  {
+    id: 112,
+    title: "Não Façam do Silêncio uma Arma",
+    content:
+      "O silêncio pode ser sábio, mas também pode ser usado para punir. Ignorar ou se afastar sem explicação aumenta a distância emocional. Se precisarem de espaço, digam com clareza e amor o porquê.",
+    category: "Conflitos",
+    icon: Shield,
+    verse: "Quem encobre o ódio tem lábios mentirosos, e quem espalha calúnia é insensato. - Provérbios 10:18",
+    popularity: 83,
+  },
+  {
+    id: 113,
+    title: "Evitem Generalizações",
+    content:
+      "Frases como 'você sempre' ou 'você nunca' alimentam a mágoa e desviam o foco do real problema. Falem sobre atitudes específicas e como se sentiram, sem atacar o caráter da pessoa.",
+    category: "Conflitos",
+    icon: Shield,
+    verse: "As palavras agradáveis são como favo de mel, doces para a alma e medicina para o corpo. - Provérbios 16:24",
+    popularity: 84,
+  },
+  
+  {
+    id: 114,
+    title: "Busquem a Reconciliação, Não a Razão",
+    content:
+      "Mais importante do que provar um ponto é restaurar a conexão. Escolher a reconciliação é sinal de amor maduro. Às vezes, o perdão cura feridas que a razão jamais conseguiria.",
+    category: "Conflitos",
+    icon: Shield,
+    verse: "Acima de tudo, revistam-se do amor, que é o elo perfeito. - Colossenses 3:14",
+    popularity: 89,
+  },
+  
+  {
+    id: 115,
+    title: "Orem Juntos Após um Conflito",
+    content:
+      "Nada une mais dois corações do que a oração. Depois de um desentendimento, orem pedindo sabedoria, perdão e restauração. A presença de Deus transforma feridas em crescimento.",
+    category: "Conflitos",
+    icon: Shield,
+    verse: "Onde dois ou três estiverem reunidos em meu nome, ali eu estou no meio deles. - Mateus 18:20",
+    popularity: 93,
+  },
+  {
+    id: 116,
+    title: "Planejem o Futuro Juntos",
+    content:
+      "Estabeleçam metas financeiras como casal — compra de casa, investimentos e aposentadoria. Caminhar na mesma direção financeira fortalece a união e evita decisões impulsivas.",
+    category: "Finanças",
+    icon: TrendingUp,
+    verse: "Os planos do diligente tendem à abundância, mas a pressa leva à pobreza. - Provérbios 21:5",
+    popularity: 82,
+  },
+  {
+    id: 117,
+    title: "Evitem Dívidas Desnecessárias",
+    content:
+      "Vivam com o que têm e evitem se endividar para manter aparências. Dívidas geram estresse e podem afetar a harmonia no relacionamento.",
+    category: "Finanças",
+    icon: TrendingUp,
+    verse: "A ninguém devais coisa alguma, a não ser o amor. - Romanos 13:8",
+    popularity: 91,
+  },
+  {
+    id: 118,
+    title: "Sejam Generosos",
+    content:
+      "A generosidade abre portas e abençoa o casal. Doar com amor demonstra gratidão e fé, lembrando que tudo o que temos vem de Deus.",
+    category: "Finanças",
+    icon: TrendingUp,
+    verse: "Há maior felicidade em dar do que em receber. - Atos 20:35",
+    popularity: 88,
+  },
+  {
+    id: 119,
+    title: "Criem um Orçamento Mensal",
+    content:
+      "Organizem juntos suas despesas e receitas. Um orçamento bem planejado evita brigas e mostra transparência nas decisões financeiras.",
+    category: "Finanças",
+    icon: TrendingUp,
+    verse: "Quem é fiel no pouco também é fiel no muito. - Lucas 16:10",
+    popularity: 79,
+  },
+  {
+    id: 120,
+    title: "Aprendam a Viver com Contentamento",
+    content:
+      "Evitem comparar-se a outros casais. A verdadeira riqueza está em viver com gratidão e contentamento, não em acumular bens.",
+    category: "Finanças",
+    icon: TrendingUp,
+    verse: "Tendo, porém, sustento e com que nos vestir, estejamos contentes. - 1 Timóteo 6:8",
+    popularity: 85,
+  },
+  {
+    id: 121,
+    title: "Decidam Grandes Gastos em Conjunto",
+    content:
+      "Antes de qualquer compra importante, conversem e orem juntos. Decisões financeiras compartilhadas fortalecem a confiança mútua.",
+    category: "Finanças",
+    icon: TrendingUp,
+    verse: "Se dois de vós concordarem na terra em qualquer coisa que pedirem, isso lhes será feito. - Mateus 18:19",
+    popularity: 83,
+  },
+  {
+    id: 122,
+    title: "Invistam no Conhecimento",
+    content:
+      "Busquem aprender sobre finanças pessoais e investimentos. A sabedoria financeira traz estabilidade e oportunidades para o futuro.",
+    category: "Finanças",
+    icon: TrendingUp,
+    verse: "Com a sabedoria se edifica a casa, e com o entendimento ela se estabelece. - Provérbios 24:3",
+    popularity: 87,
+  },
+  {
+    id: 123,
+    title: "Confiem em Deus como Provedor",
+    content:
+      "Façam sua parte com diligência, mas lembrem-se de que Deus é quem supre todas as necessidades. A fé traz paz mesmo nos tempos difíceis.",
+    category: "Finanças",
+    icon: TrendingUp,
+    verse: "O meu Deus suprirá todas as vossas necessidades segundo as suas riquezas em glória. - Filipenses 4:19",
+    popularity: 94,
+  },
+  {
+    id: 124,
+    title: "Valorizem os Pequenos Momentos",
+    content:
+      "Nem sempre o amor está nas grandes viagens ou jantares caros. Às vezes, ele está em um café juntos pela manhã ou em um olhar de cumplicidade. Aproveitem os detalhes do dia a dia.",
+    category: "Tempo",
+    icon: Calendar,
+    verse: "Ensina-nos a contar os nossos dias para que alcancemos coração sábio. - Salmos 90:12",
+    popularity: 92,
+  },
+  {
+    id: 125,
+    title: "Aprendam a Esperar",
+    content:
+      "O amor verdadeiro cresce no tempo certo. Não apresse processos nem decisões. Tudo o que é sólido leva tempo para amadurecer.",
+    category: "Tempo",
+    icon: Calendar,
+    verse: "Tudo tem o seu tempo determinado, e há tempo para todo propósito debaixo do céu. - Eclesiastes 3:1",
+    popularity: 87,
+  },
+  {
+    id: 126,
+    title: "Desacelerem Juntos",
+    content:
+      "Vivemos correndo, mas às vezes o melhor que um casal pode fazer é simplesmente parar. Desacelerem, respirem e desfrutem a presença um do outro sem pressa.",
+    category: "Tempo",
+    icon: Calendar,
+    verse: "Aquietai-vos e sabei que eu sou Deus. - Salmos 46:10",
+    popularity: 90,
+  },
+  {
+    id: 127,
+    title: "Planejem o Futuro a Dois",
+    content:
+      "Reservem tempo para sonhar juntos. Metas e planos em comum fortalecem o compromisso e mantêm o casal olhando na mesma direção.",
+    category: "Tempo",
+    icon: Calendar,
+    verse: "O coração do homem planeja o seu caminho, mas o Senhor lhe dirige os passos. - Provérbios 16:9",
+    popularity: 88,
+  },
+  {
+    id: 128,
+    title: "Vivam o Agora",
+    content:
+      "Não deixem o passado prender vocês, nem o futuro roubar o presente. Vivam o momento com gratidão e presença.",
+    category: "Tempo",
+    icon: Calendar,
+    verse: "Portanto, não vos inquieteis com o dia de amanhã. - Mateus 6:34",
+    popularity: 91,
+  },
+  {
+    id: 129,
+    title: "Celebrem Datas Especiais",
+    content:
+      "Relembrar momentos marcantes fortalece o vínculo. Celebrem aniversários, conquistas e até pequenas vitórias com alegria.",
+    category: "Tempo",
+    icon: Calendar,
+    verse: "Regozijai-vos sempre no Senhor; outra vez digo, regozijai-vos. - Filipenses 4:4",
+    popularity: 84,
+  },
+  {
+    id: 130,
+    title: "Sejam Pacientes com os Processos",
+    content:
+      "Cada fase do relacionamento traz desafios. Tenham paciência um com o outro e com o tempo das coisas. Crescimento leva tempo e amor constante.",
+    category: "Tempo",
+    icon: Calendar,
+    verse: "A paciência é a companheira da sabedoria. - Provérbios 19:11",
+    popularity: 86,
+  },
+  {
+    id: 131,
+    title: "Façam Pausas Juntos",
+    content:
+      "Tirar um tempo de descanso é essencial. Usem esses momentos para recarregar as energias e se reconectarem como casal.",
+    category: "Tempo",
+    icon: Calendar,
+    verse: "Vinde a mim todos os que estais cansados e oprimidos, e eu vos aliviarei. - Mateus 11:28",
+    popularity: 85,
+  },
+  {
+    id: 132,
+    title: "Comuniquem Seus Desejos com Clareza",
+    content:
+      "A intimidade saudável começa com comunicação aberta. Falem sobre o que gostam, limites e emoções, sem vergonha ou julgamento.",
+    category: "Intimidade",
+    icon: Users,
+    verse: "Sejam todos prontos para ouvir, tardios para falar e tardios para irar-se. - Tiago 1:19",
+    popularity: 82,
+  },
+  
+  {
+    id: 133,
+    title: "Cultivem a Conexão Emocional Antes da Física",
+    content:
+      "A verdadeira intimidade nasce da segurança emocional. Fortaleçam o vínculo de confiança antes de buscar o contato físico.",
+    category: "Intimidade",
+    icon: Users,
+    verse: "Acima de tudo, revistam-se do amor, que é o elo perfeito. - Colossenses 3:14",
+    popularity: 90,
+  },
+  
+  {
+    id: 134,
+    title: "Respeitem o Tempo Um do Outro",
+    content:
+      "Nem sempre os dois estarão prontos ao mesmo tempo. O respeito mútuo e a paciência demonstram amor e maturidade.",
+    category: "Intimidade",
+    icon: Users,
+    verse: "O amor é paciente, o amor é bondoso. - 1 Coríntios 13:4",
+    popularity: 88,
+  },
+  
+  {
+    id: 135,
+    title: "Criem Momentos de Carinho e Afeto",
+    content:
+      "Gestos simples como abraços, toques e olhares sinceros fortalecem a intimidade e demonstram amor sem palavras.",
+    category: "Intimidade",
+    icon: Users,
+    verse: "Beijem-se uns aos outros com beijo santo. - Romanos 16:16",
+    popularity: 83,
+  },
+  
+  {
+    id: 136,
+    title: "Mantenham a Pureza e os Limites Espirituais",
+    content:
+      "A intimidade deve refletir valores espirituais. Manter limites claros honra a si mesmo, ao outro e a Deus.",
+    category: "Intimidade",
+    icon: Users,
+    verse: "Como pode o jovem manter pura a sua conduta? Vivendo de acordo com a tua palavra. - Salmos 119:9",
+    popularity: 87,
+  },
+  
+  {
+    id: 137,
+    title: "Reconheçam que a Intimidade Vai Além do Corpo",
+    content:
+      "Intimidade é também emocional e espiritual. Envolve conhecer profundamente o coração e a alma do outro.",
+    category: "Intimidade",
+    icon: Users,
+    verse: "O homem vê a aparência, mas o Senhor vê o coração. - 1 Samuel 16:7",
+    popularity: 91,
+  },
+  
+  {
+    id: 138,
+    title: "Orem Juntos pela Vida Íntima",
+    content:
+      "Trazer Deus para o centro da intimidade fortalece o amor, o respeito e o propósito espiritual do relacionamento.",
+    category: "Intimidade",
+    icon: Users,
+    verse: "Se dois de vocês concordarem na terra em qualquer assunto, será feito por meu Pai que está nos céus. - Mateus 18:19",
+    popularity: 94,
+  },
+  {
+    id: 139,
+    title: "Pratiquem Exercícios Juntos",
+    content:
+      "Atividades físicas em casal fortalecem a saúde e a conexão emocional. Caminhadas, academias ou esportes em dupla criam momentos de parceria e motivação mútua.",
+    category: "Bem-estar",
+    icon: Heart,
+    verse: "Porque Deus não nos deu espírito de covardia, mas de poder, de amor e de moderação. - 2 Timóteo 1:7",
+    popularity: 88,
+  },
+  {
+    id: 140,
+    title: "Valorizem o Sono de Qualidade",
+    content:
+      "Dormir bem é essencial para o equilíbrio emocional e físico. Estabeleçam rotinas noturnas saudáveis e respeitem o descanso um do outro.",
+    category: "Bem-estar",
+    icon: Heart,
+    verse: "Em paz me deito e logo adormeço, porque, Senhor, só tu me fazes habitar em segurança. - Salmos 4:8",
+    popularity: 80,
+  },
+  {
+    id: 141,
+    title: "Cuidem da Alimentação",
+    content:
+      "Uma dieta equilibrada aumenta a energia e o bem-estar. Preparem refeições saudáveis juntos e incentivem escolhas alimentares conscientes.",
+    category: "Bem-estar",
+    icon: Heart,
+    verse: "Portanto, quer comais, quer bebais, ou façais qualquer outra coisa, fazei tudo para a glória de Deus. - 1 Coríntios 10:31",
+    popularity: 85,
+  },
+  {
+    id: 142,
+    title: "Pratiquem a Gratidão Diária",
+    content:
+      "Reconhecer as bênçãos diárias traz leveza e alegria. Reservem um momento para agradecer um ao outro e pelas pequenas vitórias da vida.",
+    category: "Bem-estar",
+    icon: Heart,
+    verse: "Em tudo dai graças, porque esta é a vontade de Deus em Cristo Jesus para convosco. - 1 Tessalonicenses 5:18",
+    popularity: 92,
+  },
+  {
+    id: 143,
+    title: "Desconectem-se das Redes",
+    content:
+      "Separem momentos livres de tecnologia para estarem plenamente presentes. Isso renova a mente e fortalece o vínculo do casal.",
+    category: "Bem-estar",
+    icon: Heart,
+    verse: "Aquietai-vos e sabei que eu sou Deus. - Salmos 46:10",
+    popularity: 87,
+  },
+  {
+    id: 144,
+    title: "Pratiquem a Respiração Consciente",
+    content:
+      "A respiração profunda alivia o estresse e melhora o foco. Façam pausas diárias para respirar juntos e reencontrar o equilíbrio interior.",
+    category: "Bem-estar",
+    icon: Heart,
+    verse: "O sopro de vida vem do Senhor. - Gênesis 2:7",
+    popularity: 78,
+  },
+  {
+    id: 145,
+    title: "Encontrem Prazer nas Pequenas Coisas",
+    content:
+      "O bem-estar está nas simplicidades do dia a dia. Valorizem um sorriso, um gesto carinhoso ou um café compartilhado com amor.",
+    category: "Bem-estar",
+    icon: Heart,
+    verse: "O coração alegre aformoseia o rosto. - Provérbios 15:13",
+    popularity: 90,
+  },
+
   
 ]
 
