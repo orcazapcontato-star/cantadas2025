@@ -95,7 +95,7 @@ export default function HomePage() {
               <div className="text-sm md:text-base text-muted-foreground font-medium">Cantadas Respeitosas</div>
             </div>
             <div className="text-center group">
-              <div className="text-5xl font-bold text-primary mb-2 group-hover:scale-110 transition-transform">5K+</div>
+              <div className="text-5xl font-bold text-primary mb-2 group-hover:scale-110 transition-transform">1K+</div>
               <div className="text-sm md:text-base text-muted-foreground font-medium">Usuários Ativos</div>
             </div>
             <div className="text-center group">
