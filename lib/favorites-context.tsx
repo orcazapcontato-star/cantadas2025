@@ -1,6 +1,7 @@
 "use client"
 
 import { createContext, useContext, useState, useEffect, type ReactNode } from "react"
+import { useAuth } from "@/lib/auth-context"
 
 export interface FavoriteItem {
   id: string
@@ -14,47 +15,55 @@ export interface FavoriteItem {
 
 interface FavoritesContextType {
   favorites: FavoriteItem[]
-  addFavorite: (item: Omit<FavoriteItem, "id" | "dateAdded">) => void
-  removeFavorite: (id: string) => void
-  clearAllFavorites: () => void
+  addFavorite: (item: Omit<FavoriteItem, "id" | "dateAdded">) => Promise<void>
+  removeFavorite: (id: string) => Promise<void>
+  clearAllFavorites: () => Promise<void>
   isFavorite: (content: string) => boolean
   getFavoritesByType: (type: FavoriteItem["type"]) => FavoriteItem[]
+  isLoading: boolean
 }
 
 const FavoritesContext = createContext<FavoritesContextType | undefined>(undefined)
 
 export function FavoritesProvider({ children }: { children: ReactNode }) {
   const [favorites, setFavorites] = useState<FavoriteItem[]>([])
+  const [isLoading, setIsLoading] = useState(false)
+  const { user } = useAuth()
 
-  // Load favorites from localStorage on mount
   useEffect(() => {
     const savedFavorites = localStorage.getItem("cantadas-favorites")
     if (savedFavorites) {
-      setFavorites(JSON.parse(savedFavorites))
+      try {
+        setFavorites(JSON.parse(savedFavorites))
+      } catch (e) {
+        console.error("Failed to parse saved favorites:", e)
+      }
     }
   }, [])
 
-  // Save favorites to localStorage whenever favorites change
-  useEffect(() => {
-    localStorage.setItem("cantadas-favorites", JSON.stringify(favorites))
-    window.dispatchEvent(new Event("favorites-updated"))
-  }, [favorites])
-
-  const addFavorite = (item: Omit<FavoriteItem, "id" | "dateAdded">) => {
+  const addFavorite = async (item: Omit<FavoriteItem, "id" | "dateAdded">) => {
     const newFavorite: FavoriteItem = {
       ...item,
-      id: Date.now().toString() + Math.random().toString(36).substr(2, 9),
+      id: Date.now().toString(),
       dateAdded: new Date().toISOString(),
     }
-    setFavorites((prev) => [newFavorite, ...prev])
+    const updated = [newFavorite, ...favorites]
+    setFavorites(updated)
+    localStorage.setItem("cantadas-favorites", JSON.stringify(updated))
+    window.dispatchEvent(new Event("favorites-updated"))
   }
 
-  const removeFavorite = (id: string) => {
-    setFavorites((prev) => prev.filter((fav) => fav.id !== id))
+  const removeFavorite = async (id: string) => {
+    const updated = favorites.filter((fav) => fav.id !== id)
+    setFavorites(updated)
+    localStorage.setItem("cantadas-favorites", JSON.stringify(updated))
+    window.dispatchEvent(new Event("favorites-updated"))
   }
 
-  const clearAllFavorites = () => {
+  const clearAllFavorites = async () => {
     setFavorites([])
+    localStorage.removeItem("cantadas-favorites")
+    window.dispatchEvent(new Event("favorites-updated"))
   }
 
   const isFavorite = (content: string) => {
@@ -74,6 +83,7 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
         clearAllFavorites,
         isFavorite,
         getFavoritesByType,
+        isLoading,
       }}
     >
       {children}
