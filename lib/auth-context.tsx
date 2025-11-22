@@ -30,35 +30,57 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined)
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null)
-  const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    const savedUser = localStorage.getItem("auth-user")
-    if (savedUser) {
+    const initializeAuth = async () => {
       try {
-        setUser(JSON.parse(savedUser))
-      } catch (e) {
-        console.error("Failed to parse saved user:", e)
+        const storedUser = localStorage.getItem("auth_user")
+        if (storedUser) {
+          setUser(JSON.parse(storedUser))
+        }
+      } catch (error) {
+        console.error("Auth initialization error:", error)
+      } finally {
+        setIsLoading(false)
       }
     }
+
+    initializeAuth()
   }, [])
 
   const login = async (email: string, password: string): Promise<boolean> => {
     setIsLoading(true)
     try {
-      const mockUser: User = {
-        id: `user-${Date.now()}`,
-        name: email.split("@")[0],
-        email,
-        created_at: new Date().toISOString(),
-        preferences: {
-          notifications: true,
-          newsletter: true,
-          darkMode: false,
-        },
+      // Simple validation - in production, this would verify against a backend
+      if (!email || !password) {
+        console.error("Email and password required")
+        setIsLoading(false)
+        return false
       }
-      setUser(mockUser)
-      localStorage.setItem("auth-user", JSON.stringify(mockUser))
+
+      const storedUsers = JSON.parse(localStorage.getItem("users") || "[]")
+      const foundUser = storedUsers.find((u: any) => u.email === email && u.password === password)
+
+      if (!foundUser) {
+        console.error("Invalid email or password")
+        setIsLoading(false)
+        return false
+      }
+
+      const userData: User = {
+        id: foundUser.id,
+        name: foundUser.name,
+        email: foundUser.email,
+        bio: foundUser.bio,
+        avatar_url: foundUser.avatar_url,
+        created_at: foundUser.created_at,
+        preferences: foundUser.preferences,
+      }
+
+      setUser(userData)
+      localStorage.setItem("auth_user", JSON.stringify(userData))
+      localStorage.setItem("auth_token", `token_${foundUser.id}`)
       setIsLoading(false)
       return true
     } catch (error) {
@@ -71,10 +93,27 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const register = async (name: string, email: string, password: string): Promise<boolean> => {
     setIsLoading(true)
     try {
-      const mockUser: User = {
-        id: `user-${Date.now()}`,
+      if (!name || !email || !password) {
+        console.error("All fields required")
+        setIsLoading(false)
+        return false
+      }
+
+      const storedUsers = JSON.parse(localStorage.getItem("users") || "[]")
+
+      if (storedUsers.some((u: any) => u.email === email)) {
+        console.error("Email already registered")
+        setIsLoading(false)
+        return false
+      }
+
+      const newUser = {
+        id: `user_${Date.now()}`,
         name,
         email,
+        password,
+        bio: "",
+        avatar_url: "",
         created_at: new Date().toISOString(),
         preferences: {
           notifications: true,
@@ -82,8 +121,23 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           darkMode: false,
         },
       }
-      setUser(mockUser)
-      localStorage.setItem("auth-user", JSON.stringify(mockUser))
+
+      storedUsers.push(newUser)
+      localStorage.setItem("users", JSON.stringify(storedUsers))
+
+      const userData: User = {
+        id: newUser.id,
+        name: newUser.name,
+        email: newUser.email,
+        bio: newUser.bio,
+        avatar_url: newUser.avatar_url,
+        created_at: newUser.created_at,
+        preferences: newUser.preferences,
+      }
+
+      setUser(userData)
+      localStorage.setItem("auth_user", JSON.stringify(userData))
+      localStorage.setItem("auth_token", `token_${newUser.id}`)
       setIsLoading(false)
       return true
     } catch (error) {
@@ -95,7 +149,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   const logout = async () => {
     setUser(null)
-    localStorage.removeItem("auth-user")
+    localStorage.removeItem("auth_user")
+    localStorage.removeItem("auth_token")
   }
 
   const updateProfile = async (updates: Partial<User>): Promise<boolean> => {
@@ -104,7 +159,16 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     try {
       const updatedUser = { ...user, ...updates }
       setUser(updatedUser)
-      localStorage.setItem("auth-user", JSON.stringify(updatedUser))
+      localStorage.setItem("auth_user", JSON.stringify(updatedUser))
+
+      const storedUsers = JSON.parse(localStorage.getItem("users") || "[]")
+      const userIndex = storedUsers.findIndex((u: any) => u.id === user.id)
+
+      if (userIndex !== -1) {
+        storedUsers[userIndex] = { ...storedUsers[userIndex], ...updates }
+        localStorage.setItem("users", JSON.stringify(storedUsers))
+      }
+
       window.dispatchEvent(new Event("user-updated"))
       return true
     } catch (error) {

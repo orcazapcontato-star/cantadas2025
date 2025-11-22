@@ -5,6 +5,7 @@ create table if not exists public.profiles (
   email text,
   bio text,
   avatar_url text,
+  preferences jsonb default '{"notifications": true, "newsletter": true, "darkMode": false}',
   created_at timestamp with time zone default timezone('utc'::text, now()) not null,
   updated_at timestamp with time zone default timezone('utc'::text, now()) not null
 );
