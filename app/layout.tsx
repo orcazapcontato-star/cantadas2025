@@ -1,7 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
 import { FavoritesProvider } from "@/lib/favorites-context"
 import { AuthProvider } from "@/lib/auth-context"
 import { RealtimeSyncProvider } from "@/lib/realtime-sync"
@@ -30,7 +29,6 @@ export default function RootLayout({
               <RealtimeSyncProvider>{children}</RealtimeSyncProvider>
             </FavoritesProvider>
           </AuthProvider>
-          <Analytics />
         </Suspense>
       </body>
     </html>
